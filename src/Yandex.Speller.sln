@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Speller.Api", "Yandex.Speller.Api\Yandex.Speller.Api.csproj", "{459F6A84-441D-4327-8A7B-1A1989AA02D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Speller.Api.Tests", "Yandex.Speller.Api.Tests\Yandex.Speller.Api.Tests.csproj", "{C2D435D2-A021-4760-9CE6-750AA23B749F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459F6A84-441D-4327-8A7B-1A1989AA02D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459F6A84-441D-4327-8A7B-1A1989AA02D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459F6A84-441D-4327-8A7B-1A1989AA02D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459F6A84-441D-4327-8A7B-1A1989AA02D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D435D2-A021-4760-9CE6-750AA23B749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D435D2-A021-4760-9CE6-750AA23B749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D435D2-A021-4760-9CE6-750AA23B749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D435D2-A021-4760-9CE6-750AA23B749F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Yandex.Speller.Test\Yandex.Speller.Test.csproj
+	EndGlobalSection
+EndGlobal
