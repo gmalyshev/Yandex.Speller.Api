@@ -16,8 +16,8 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <CodePage>65001</CodePage>
-    <OutputPath>..\..\bin\net40</OutputPath>
-    <DocumentationFile>..\..\bin\net40\Yandex.Speller.Api.XML</DocumentationFile>
+    <OutputPath>..\..\bin</OutputPath>
+    <DocumentationFile>..\..\bin\Yandex.Speller.Api.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -91,7 +91,12 @@
       <PackageDir>$(ProjectDir)../../Package</PackageDir>
     </PropertyGroup>
     <Message Text="NuGetLib:&#xD;&#xA;     '$(BuildDir)'" />
-    <Exec WorkingDirectory="$(PackageDir)" Command="$(ToolsDir)/nuget.exe pack $(ProjectDir)Yandex.Speller.Api.csproj" />
+    <Exec WorkingDirectory="$(PackageDir)" Command="$(ToolsDir)/nuget.exe pack $(ProjectDir)Yandex.Speller.Api.csproj -Symbols" />
+   <ItemGroup>
+    <Nupkgfile Include="$(PackageDir)\*.nupkg" Exclude="$(PackageDir)\*.symbols.nupkg"/>   
+  </ItemGroup>
+  
+	 <Exec WorkingDirectory="$(PackageDir)" Command="$(ToolsDir)/nuget.exe push %(Nupkgfile.FullPath)  $(NugetApiKey)" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

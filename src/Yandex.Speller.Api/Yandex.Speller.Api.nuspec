@@ -11,7 +11,7 @@
     <iconUrl>http://tech.yandex.ru/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <releaseNotes>Release preview.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Yandex Speller Spellcheck</tags>
   </metadata>
