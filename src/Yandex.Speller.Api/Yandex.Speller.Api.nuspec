@@ -7,7 +7,7 @@
     <authors>$author$</authors>
     <owners>$author$</owners>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-    <projectUrl>http://github.com</projectUrl>
+    <projectUrl>https://github.com/gmalyshev/Yandex.Speller.Api</projectUrl>
     <iconUrl>http://tech.yandex.ru/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
